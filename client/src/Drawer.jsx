@@ -70,7 +70,7 @@ function ResponsiveDrawer(props) {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        <Link to="/">
+        <Link to="/dashboard">
           <ListItem button>
             <ListItemIcon>
               <MailIcon />

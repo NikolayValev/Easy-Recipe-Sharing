@@ -59,7 +59,7 @@ export default function SignUp() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} noValidate >
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -108,6 +108,18 @@ export default function SignUp() {
               />
             </Grid>
             <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="password2"
+                label="Confirm password"
+                type="password"
+                id="password2"
+                autoComplete="current-password"
+              />
+            </Grid>
+            <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
                 label="I want to receive inspiration, marketing promotions and updates via email."
@@ -125,7 +137,7 @@ export default function SignUp() {
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="login" variant="body2">
                 Already have an account? Sign in
               </Link>
             </Grid>

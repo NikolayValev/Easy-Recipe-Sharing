@@ -70,6 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### description  of packages
+## Backend
 bcryptjs: used to hash passwords before we store them in our database
 
 body-parser: used to parse incoming request bodies in a middleware
@@ -89,3 +90,13 @@ passport: used to authenticate requests, which it does through an extensible set
 passport-jwt: passport strategy for authenticating with a JSON Web Token (JWT); lets you authenticate endpoints using a JWT
 
 validator: used to validate inputs (e.g. check for valid email format, confirming passwords match)
+## Frontend
+axios: promise based HTTP client for making requests to our backend
+classnames: used for conditional classes in our JSX
+jwt-decode: used to decode our jwt so we can get user data from it
+react-redux: allows us to use Redux with React
+react-router-dom: used for routing purposes
+redux: used to manage state between components (can be used with React or any other view library)
+redux-thunk: middleware for Redux that allows us to directly access the dispatch method to make asynchronous calls from our actions
+## user authentication
+https://ui.dev/react-router-v4-protected-routes-authentication/
